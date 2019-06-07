@@ -5,17 +5,44 @@
 layout: default
 ---
 
-<ul>
+<ul class="posts">
   {% for post in site.posts %}
     <li class="post {{post.type}}">
       {%if post.type == 'photo' %}
-        {% for photo in photos %}
-          <img src={{photo.url}}>
-        {%endfor%}
+        <div class="slideshow">
+          {% for photo in post.photos %}
+            <div  class="item" style="background: yellow; min-height: 100px; min">
+              <img src={{photo.url}}>
+            </div>
+          {%endfor%}
+        </div>
+        <div class="caption">
+          <a href={{post.url}}>
+            {{post.content}}
+          </a>
+        </div>
       {%endif%}
-      <div class="caption">
-        {{post.content}}
-      </div>
+
+      {%if post.type == 'vimeo' %}
+        <iframe src={{post.vimeo.url}} width={{post.vimeo.width}} height={{post.vimeo.height}}  frameborder="0" loop="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="caption">
+          <a href={{post.url}}>
+            {{post.content}}
+          </a>
+        </div>
+      {% endif %}
+
+      {%if post.type == 'video' %}
+        <video autoplay controls>
+          <source src="/assets/{{post.video}}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="caption">
+          <a href={{post.url}}>
+            {{post.content}}
+          </a>
+        </div>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>

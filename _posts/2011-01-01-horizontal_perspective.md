@@ -2,18 +2,17 @@
 layout: default
 title:  Inverse perspective - Autumn
 date:   2019-06-06 20:52:02 +0200
-categories: art
+type: photo
 photos:
 - url: /assets/hosok_osz.jpg
+- url: /assets/HIP-fatol_az_erdo.jpg
+- url: /assets/HIP-fountain_paris.jpg
+- url: /assets/HIP-balak.jpg
 ---
 
 
-[](/assets/hosok_osz.jpg)
 # {{page.title}}
 
-{% for image in page.images %}
-
-{%endfor%}
 
 Giclée print, 174 x 120 cm
 

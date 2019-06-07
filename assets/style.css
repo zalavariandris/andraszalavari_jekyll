@@ -1,0 +1,124 @@
+body{
+    font-family: futura;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    background: rgb(240, 240, 240);
+
+    font-size: 13px;
+    color: #3c3c3b;
+    line-height: normal;
+    word-wrap: break-word;
+}
+
+header{
+	text-align: center;
+    margin: 180px 0;
+    line-height: 1;
+}
+header a{
+	text-decoration: none;
+	color: inherit;
+}
+
+header h1{
+	font-size: 14px;
+    font-weight: normal;
+    padding: 0;
+}
+
+header h1+p{
+	font-size: 14px;
+    font-weight: normal;
+    padding: 0;
+    font-style: italic;
+}
+
+main{
+    max-width: 1280px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
+.posts{
+	max-width: 1280px;
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+}
+.post{
+	margin: 100px 50px;
+    padding: 20px;
+    background: white;
+}
+
+.post.photo .slideshow{
+	display: flex;
+	flex-wrap: wrap;
+	margin: -5px;
+}
+
+.post.photo .slideshow .item{
+	height: auto;
+	flex-grow: 1;
+	flex-wrap: nowrap;
+	flex-basis: 25%; /* max 4 items in a row */
+	margin: 5px;
+
+	/*outline: dashed black 1px;*/
+}
+
+.post.photo .item:first-child { 
+  flex-basis:100%; /* spread first row */
+}
+
+.post.photo .slideshow img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+/*	width:100px;
+	height: 100px;*/
+}
+
+.post .caption{
+	text-align: right;
+}
+
+.post .caption>a{
+	text-decoration: none;
+	color: inherit;
+}
+.post .caption>a:hover h1{
+	text-decoration: underline;
+}
+
+.post .caption h1 {
+	font-size: 13px;
+	margin: 0.67em 0;
+    font-weight: normal;
+}
+
+.post .caption p{
+	text-align: right;
+	font-style: italic;
+	font-size: 10px;
+	margin: 0.83em 0;
+}
+
+
+
+.post.video, .post.vimeo{
+	text-align: center;
+	color: rgb(220, 220, 220);
+	background: black;
+	border-radius: 3px;
+}
+
+.post.video video, .post.vimeo iframe{
+	margin-bottom: 1.5em;
+	max-height: 700px
+}
+
