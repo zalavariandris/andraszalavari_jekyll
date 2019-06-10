@@ -109,7 +109,9 @@ main{
 }
 
 
-
+.post.video video{
+	max-width: 100%
+}
 .post.video, .post.vimeo{
 	text-align: center;
 	color: rgb(220, 220, 220);
@@ -120,5 +122,9 @@ main{
 .post.video video, .post.vimeo iframe{
 	margin-bottom: 1.5em;
 	max-height: 700px
+}
+
+.post.video video:focus{
+	outline: none;
 }
 

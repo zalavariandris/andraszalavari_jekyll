@@ -7,42 +7,53 @@ layout: default
 
 <ul class="posts">
   {% for post in site.posts %}
-    <li class="post {{post.type}}">
-      {%if post.type == 'photo' %}
-        <div class="slideshow">
-          {% for photo in post.photos %}
-            <div  class="item" style="background: yellow; min-height: 100px; min">
-              <img src={{photo.url}}>
-            </div>
-          {%endfor%}
-        </div>
-        <div class="caption">
-          <a href={{post.url}}>
-            {{post.content}}
-          </a>
-        </div>
-      {%endif%}
+  <li class="post {{post.type}}">
+    <!-- {{post.title}} -->
+    
+    {% if post.type == 'photo' %}
+    <!-- IMAGE GALLERY POST -->
+    <div class="slideshow">
+      {% for photo in post.photos %}
+      <div  class="item">
+        <img src={{photo.url}}>
+      </div>
+      {% endfor %}
+    </div>
 
-      {%if post.type == 'vimeo' %}
-        <iframe src={{post.vimeo.url}} width={{post.vimeo.width}} height={{post.vimeo.height}}  frameborder="0" loop="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <div class="caption">
-          <a href={{post.url}}>
-            {{post.content}}
-          </a>
-        </div>
+    <div class="caption">
+      <a href={{post.url}}>
+        {{post.content}}
+      </a>
+    </div>
+    {% endif %}
+
+    
+    {% if post.type == 'video' %}
+    <!-- VIDEO POST -->
+    <video controls>
+      <source src={{post.video.url}} type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="caption">
+        <a href={{post.url}}>
+          {{post.content}}
+        </a>
+      </div>
       {% endif %}
 
-      {%if post.type == 'video' %}
-        <video autoplay controls>
-          <source src="/assets/{{post.video}}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div class="caption">
-          <a href={{post.url}}>
-            {{post.content}}
-          </a>
-        </div>
+      
+      {% if post.type == 'vimeo' %}
+      <!-- VIMEO POST -->
+      <iframe src={{post.vimeo.url}} width={{post.vimeo.width}} height={{post.vimeo.height}}  frameborder="0" loop="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div class="caption">
+        <a href={{post.url}}>
+          {{post.content}}
+        </a>
+      </div>
       {% endif %}
+
     </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+

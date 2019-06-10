@@ -4,9 +4,9 @@ title:  "Thinking some more"
 date:   2019-06-06 20:52:02 +0200
 type: photo
 photos:
-- url: /assets/thinking_some_more-fkse.jpg
-- url: /assets/thinking_some_more-sculpture_obudai.jpg
-- url: /assets/thinking_some_more-obudai_installation_view.jpg
+- url: /assets/media/thinking_some_more-fkse.jpg
+- url: /assets/media/thinking_some_more-sculpture_obudai.jpg
+- url: /assets/media/thinking_some_more-obudai_installation_view.jpg
 ---
 
 # {{page.title}}
