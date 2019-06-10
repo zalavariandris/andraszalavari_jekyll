@@ -28,7 +28,7 @@ layout: default
     {% if post.type == 'video' %}
     <!-- VIDEO POST -->
     <video controls>
-      <source src={{post.video.url}} type="video/mp4">
+      <source src={{site.baseurl}}{{post.video.url}} type="video/mp4">
         Your browser does not support the video tag.
       </video>
 
@@ -42,7 +42,7 @@ layout: default
       
       {% if post.type == 'vimeo' %}
       <!-- VIMEO POST -->
-      <iframe src={{site.baseurl}}{{post.vimeo.url}} width={{post.vimeo.width}} height={{post.vimeo.height}}  frameborder="0" loop="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <iframe src={{post.vimeo.url}} width={{post.vimeo.width}} height={{post.vimeo.height}}  frameborder="0" loop="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
       <div class="caption">
         <a href={{site.baseurl}}{{post.url}}>
           {{post.content}}
