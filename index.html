@@ -12,13 +12,13 @@ layout: default
     <div class="slideshow">
       {% for photo in post.photos %}
       <div  class="item">
-        <img src={{photo.url}}>
+        <img src={{site.baseurl}}{{photo.url}}>
       </div>
       {% endfor %}
     </div>
 
     <div class="caption">
-      <a href={{post.url}}>
+      <a href={{site.baseurl}}{{post.url}}>
         {{post.content}}
       </a>
     </div>
@@ -33,7 +33,7 @@ layout: default
       </video>
 
       <div class="caption">
-        <a href={{post.url}}>
+        <a href={{site.baseurl}}{{post.url}}>
           {{post.content}}
         </a>
       </div>
@@ -42,9 +42,9 @@ layout: default
       
       {% if post.type == 'vimeo' %}
       <!-- VIMEO POST -->
-      <iframe src={{post.vimeo.url}} width={{post.vimeo.width}} height={{post.vimeo.height}}  frameborder="0" loop="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <iframe src={{site.baseurl}}{{post.vimeo.url}} width={{post.vimeo.width}} height={{post.vimeo.height}}  frameborder="0" loop="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
       <div class="caption">
-        <a href={{post.url}}>
+        <a href={{site.baseurl}}{{post.url}}>
           {{post.content}}
         </a>
       </div>
