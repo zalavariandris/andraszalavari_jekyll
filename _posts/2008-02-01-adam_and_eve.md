@@ -6,6 +6,8 @@ published: true
 type: video
 video: 
   url: "/assets/media/adam_and_eve-640p.mp4"
+  snapshots:
+  - url: /assets/media/vlcsnap-2019-06-14-00h34m02s849.png
 ---
 
 video installation

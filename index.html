@@ -16,7 +16,7 @@ title: Portfolio
     
     {% if post.type == 'video' %}
     <!-- VIDEO POST -->
-    <video controls>
+    <video controls preload="none" poster={{site.baseurl}}{{post.video.snapshots[0].url}}>
       <source src={{site.videourl}}{{post.video.url}} type="video/mp4">
         Your browser does not support the video tag.
       </video>

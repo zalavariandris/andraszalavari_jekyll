@@ -25,7 +25,6 @@ layout: default
   </thead> 
   {% for work in site.works %}
     <tr class="work">
-      
       <td>{{work.title}}</td>
         <td>{{work.media}}</td>
         <td>{{work.copies}}</td>
@@ -44,22 +43,20 @@ layout: default
   <thead>
     <tr>
       <td>title</td>
+      <td>type</td>
       <td>media</td>
-      <td>copies</td>
-      <td>year</td>
-      <td>images</td>
     </tr>
   </thead> 
   {% for item in site.posts %}
     <tr class="work"> 
       <td>{{item.title}}</td>
-        <td>{{item.media}}</td>
-        <td>{{item.copies}}</td>
-        <td>{{item.year}}</td>
-        <td>
-        {% for image in item.images%}
-          <img src={{image.url}} style="width: 100px; height: 100px; object-fit: contain;">
-        {%endfor%}
+      <td>{{item.type}}</td>
+      <td>
+        {% if item.type == "video" %}
+        {% for snap in item.video.snapshots %}
+          <img src={{site.baseurl}}{{snap.url}} style="width: 100px; height: 100px; object-fit: contain;">
+        {% endfor %}
+        {% endif %}
       </td>
     </tr>
   {% endfor %}
