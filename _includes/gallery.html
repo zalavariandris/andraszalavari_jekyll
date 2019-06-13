@@ -1,0 +1,7 @@
+<div class="gallery {{include.layout}}">
+    {% for photo in include.photos %}
+    <div  class="item">
+        <img src="{{site.baseurl}}{{photo.url}}">
+    </div>
+    {% endfor %}
+</div>
