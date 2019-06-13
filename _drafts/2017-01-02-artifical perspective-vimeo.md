@@ -8,10 +8,10 @@ vimeo:
   width: 640
   height: 360
 ---
-# {{page.title}}
 
 (imaginary direction)
 
 1 channel, colour, digital video
 
 2017
+<!-- more -->

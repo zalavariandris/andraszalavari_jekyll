@@ -9,6 +9,4 @@ vimeo:
   height: 915
 ---
 
-# {{page.title}}
-
-
+<!-- more -->
