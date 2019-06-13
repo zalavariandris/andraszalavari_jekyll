@@ -1,5 +1,5 @@
 ---
-title:  "Artifical perspective2"
+title:  "Artifical perspective"
 
 layout: post
 date:   2019-06-06 20:52:02 +0200
