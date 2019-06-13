@@ -57,6 +57,12 @@ main{
     padding: 0 5em;
 }
 
+footer{
+	color: grey;
+	text-align: right;
+	margin: 1em;
+}
+
 .posts{
 	max-width: 1280px;
     margin-left: 0px;
@@ -168,4 +174,20 @@ h2{
 h3{
 	margin-top: 2em;
 	font-weight: normal;
+}
+
+/*Overview*/
+table{
+  border: 2px solid lightblue;
+  border-collapse: collapse;
+}
+
+/*th{
+	border: 1px solid black;
+}
+*/
+
+table td{
+	padding: 1em;
+	border: 1px solid lavender;
 }
