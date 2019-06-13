@@ -16,23 +16,27 @@ header{
     margin: 180px 0;
     line-height: 1;
 }
-header a{
-	text-decoration: none;
-	color: inherit;
-}
 
 header h1{
 	font-size: 14px;
     font-weight: normal;
-    padding: 0;
 }
 
-header h1+p{
+header nav{
 	font-size: 14px;
     font-weight: normal;
     padding: 0;
     font-style: italic;
 }
+
+header nav a{
+	text-decoration: none;
+	color: inherit;
+}
+header nav a:hover{
+	text-decoration: underline;
+}
+
 
 main{
     max-width: 1280px;
@@ -108,10 +112,10 @@ main{
 	margin: 0.83em 0;
 }
 
-
 .post.video video{
 	max-width: 100%
 }
+
 .post.video, .post.vimeo{
 	text-align: center;
 	color: rgb(220, 220, 220);
