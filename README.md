@@ -6,5 +6,7 @@ https://jekyllrb.com/docs/installation/
 > gem install jekyll bundler
 > jekyll -v
 
-## Start dev server
-> jekyll serve
+## Start local dev server
+> bundle exec jekyll serve
+
+
