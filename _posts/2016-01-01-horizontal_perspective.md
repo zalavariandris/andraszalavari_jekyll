@@ -3,11 +3,13 @@ title:  "Inverse perspective - Autumn"
 
 layout: default
 type: photo
-photos:
-- url: /assets/media/hosok_osz.jpg
-- url: /assets/media/HIP-fatol_az_erdo.jpg
-- url: /assets/media/HIP-fountain_paris.jpg
-- url: /assets/media/HIP-balak.jpg
+gallery:
+  layout: featured
+  photos:
+  - url: /assets/media/hosok_osz.jpg
+  - url: /assets/media/HIP-fatol_az_erdo.jpg
+  - url: /assets/media/HIP-fountain_paris.jpg
+  - url: /assets/media/HIP-balak.jpg
 ---
 
 Giclée print, 174 x 120 cm

@@ -4,11 +4,13 @@ title:  "Plane Tree Allée series"
 layout: default
 date:   2019-06-06 20:52:02 +0200
 type: photo
-photos:
-- url: /assets/media/platansor4.jpg
-- url: /assets/media/platansor1.jpg
-- url: /assets/media/platansor2.jpg
-- url: /assets/media/platansor3.jpg
+gallery:
+  layout: featured
+  photos:
+  - url: /assets/media/platansor4.jpg
+  - url: /assets/media/platansor1.jpg
+  - url: /assets/media/platansor2.jpg
+  - url: /assets/media/platansor3.jpg
 ---
 
 c-print, 80x110cm

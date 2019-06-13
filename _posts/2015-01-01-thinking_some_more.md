@@ -4,10 +4,12 @@ title:  "Thinking some more"
 layout: default
 date:   2019-06-06 20:52:02 +0200
 type: photo
-photos:
-- url: /assets/media/thinking_some_more-fkse.jpg
-- url: /assets/media/thinking_some_more-sculpture_obudai.jpg
-- url: /assets/media/thinking_some_more-obudai_installation_view.jpg
+gallery:
+  layout: featured
+  photos:
+  - url: /assets/media/thinking_some_more-fkse.jpg
+  - url: /assets/media/thinking_some_more-sculpture_obudai.jpg
+  - url: /assets/media/thinking_some_more-obudai_installation_view.jpg
 ---
 
 (The Thinker’s portrait)

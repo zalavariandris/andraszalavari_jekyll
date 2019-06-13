@@ -10,13 +10,7 @@ title: Home
     
     {% if post.type == 'photo' %}
     <!-- IMAGE GALLERY POST -->
-    <div class="slideshow">
-      {% for photo in post.photos %}
-      <div  class="item">
-        <img src={{site.baseurl}}{{photo.url}}>
-      </div>
-      {% endfor %}
-    </div>
+    {% include gallery.html photos=post.gallery.photos layout=post.gallery.layout %}
     {% endif %}
 
     
