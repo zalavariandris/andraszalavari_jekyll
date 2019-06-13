@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Rectscan photography"
+title:  ""
 date:   2019-06-06 20:52:02 +0200
 type: video
 video: 
@@ -9,4 +9,4 @@ video:
   - url: /assets/media/platansor1_rectscan_video-snapshot.png
 ---
 
-# {{page.title}}
+<!-- more -->

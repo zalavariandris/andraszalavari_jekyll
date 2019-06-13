@@ -1,6 +1,7 @@
 ---
+title: ""
+
 layout: default
-title: 
 type: photo
 photos:
 - url: /assets/media/kiserlet_egy_kocka_eltuntetesere-plane.jpg
@@ -10,3 +11,4 @@ photos:
 210x197mm, c-print
 
 2015
+<!-- more -->

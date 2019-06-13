@@ -17,12 +17,6 @@ title: Home
       </div>
       {% endfor %}
     </div>
-
-    <div class="caption">
-      <a href={{site.baseurl}}{{post.url}}>
-        {{post.content}}
-      </a>
-    </div>
     {% endif %}
 
     
@@ -32,24 +26,20 @@ title: Home
       <source src={{site.baseurl}}{{post.video.url}} type="video/mp4">
         Your browser does not support the video tag.
       </video>
-
-      <div class="caption">
-        <a href={{site.baseurl}}{{post.url}}>
-          {{post.content}}
-        </a>
-      </div>
       {% endif %}
 
       
       {% if post.type == 'vimeo' %}
       <!-- VIMEO POST -->
       <iframe src={{post.vimeo.url}} width={{post.vimeo.width}} height={{post.vimeo.height}}  frameborder="0" loop="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      {% endif %}
+
       <div class="caption">
         <a href={{site.baseurl}}{{post.url}}>
-          {{post.content}}
+          <h2 class="title">{{post.title}}</h2>
         </a>
+        {{post.excerpt}}
       </div>
-      {% endif %}
 
     </li>
     {% endfor %}

@@ -1,6 +1,7 @@
 ---
-layout: default
 title:  "Plane Tree Allée series"
+
+layout: default
 date:   2019-06-06 20:52:02 +0200
 type: photo
 photos:
@@ -10,8 +11,10 @@ photos:
 - url: /assets/media/platansor3.jpg
 ---
 
-# {{page.title}}
-
-c-print, 80x110cm 2018
+c-print, 80x110cm
 
 (reverse perspective, frame projection, naiv perspective, analoge perspective simulation)
+
+2018
+
+<!-- more -->

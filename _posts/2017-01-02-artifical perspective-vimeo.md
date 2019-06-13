@@ -1,6 +1,8 @@
 ---
-layout: default
 title:  Artifical perspective
+
+published: false
+layout: default
 date:   2019-06-06 20:52:02 +0200
 type: vimeo
 vimeo:
@@ -8,10 +10,10 @@ vimeo:
   width: 640
   height: 360
 ---
-# {{page.title}}
 
 (imaginary direction)
 
 1 channel, colour, digital video
 
 2017
+<!-- more -->

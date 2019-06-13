@@ -1,5 +1,5 @@
 ---
-title:  Artifical perspective
+title:  "Artifical perspective2"
 
 layout: default
 date:   2019-06-06 20:52:02 +0200
@@ -11,12 +11,11 @@ video:
   snapshots:
   - url: "/assets/media/vlcsnap-2019-06-13-10h05m57s048.png"
 ---
-# {{page.title}}
 
 (imaginary direction)
 
 1 channel, colour, digital video
 
 2017
-<!-- mroe -->
+<!-- more -->
 
