@@ -1,7 +1,7 @@
 ---
 title:  "Malevich’s cube II."
 
-layout: default
+layout: post
 type: photo
 gallery:
   layout: featured

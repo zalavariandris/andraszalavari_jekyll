@@ -1,7 +1,7 @@
 ---
 title:  "Inverse perspective - Autumn"
 
-layout: default
+layout: post
 type: photo
 gallery:
   layout: featured
@@ -21,4 +21,5 @@ Perspective studies II. - Seeing the wood for the trees, 2016
 Perspective studies II. - Fountain, 2016
 
 Perspective studies II. - Bales 2016
+
 <!-- more -->

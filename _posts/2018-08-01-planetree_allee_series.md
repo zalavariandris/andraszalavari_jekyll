@@ -1,7 +1,7 @@
 ---
 title:  "Plane Tree Allée series"
 
-layout: default
+layout: post
 date:   2019-06-06 20:52:02 +0200
 type: photo
 gallery:
@@ -20,3 +20,13 @@ c-print, 80x110cm
 2018
 
 <!-- more -->
+
+# {{page.title}}
+
+{% include gallery.html photos=page.gallery.photos layout="featured" %}
+
+c-print, 80x110cm
+
+(reverse perspective, frame projection, naiv perspective, analoge perspective simulation)
+
+2018

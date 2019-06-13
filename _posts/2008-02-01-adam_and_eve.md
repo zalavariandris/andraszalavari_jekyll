@@ -1,7 +1,7 @@
 ---
 title: Adam and Eve
 
-layout: default
+layout: post
 published: true
 type: video
 video: 
@@ -15,4 +15,5 @@ video installation
 1.60m x 210m
 
 2011
+
 <!-- more -->

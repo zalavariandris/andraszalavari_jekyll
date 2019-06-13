@@ -1,7 +1,7 @@
 ---
 title: I'm not going anywhere
 
-layout: default
+layout: post
 published: true
 type: video
 video: 
@@ -11,4 +11,5 @@ video:
 video projection
 
 2012
+
 <!-- more -->

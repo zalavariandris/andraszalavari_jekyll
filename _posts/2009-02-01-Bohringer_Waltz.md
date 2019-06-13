@@ -1,7 +1,7 @@
 ---
 title: "Böhringer Waltz"
 
-layout: default
+layout: post
 published: true
 type: video
 video: 
@@ -11,4 +11,5 @@ video:
 video
 
 2010
+
 <!-- more -->

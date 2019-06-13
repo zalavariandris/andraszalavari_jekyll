@@ -1,7 +1,7 @@
 ---
 title:  "Thinking some more"
 
-layout: default
+layout: post
 date:   2019-06-06 20:52:02 +0200
 type: photo
 gallery:
@@ -17,4 +17,15 @@ gallery:
 plaster, 35x40x45cm, video installation, 2x3.6m
 
 2017
+
 <!-- more -->
+
+# {{page.title}}
+
+(The Thinker’s portrait)
+
+{% include gallery.html photos=page.gallery.photos layout="featured" %}
+
+plaster, 35x40x45cm, video installation, 2x3.6m
+
+2017

@@ -1,6 +1,7 @@
 ---
-layout: default
 title:  ""
+
+layout: post
 date:   2019-06-06 20:52:02 +0200
 type: video
 video: 

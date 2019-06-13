@@ -1,7 +1,7 @@
 ---
 title:  "Caterpillar's Relativity"
 
-layout: default
+layout: post
 type: video
 video: 
   url: "/assets/media/caterpillar_relativity-720p.mp4"
@@ -12,4 +12,5 @@ video:
 3 channel video installation
 
 2014
+
 <!-- more -->

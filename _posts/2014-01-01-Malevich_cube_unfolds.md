@@ -1,7 +1,7 @@
 ---
 title: ""
 
-layout: default
+layout: post
 type: photo
 gallery:
   photos:

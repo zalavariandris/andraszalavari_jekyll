@@ -1,7 +1,7 @@
 ---
 title:  "Caterpillar's Relativity (closup)"
 
-layout: default
+layout: post
 published: false
 type: video
 video: 
@@ -11,4 +11,5 @@ video:
 3 channel video installation (closup)
 
 2014
+
 <!-- more -->
