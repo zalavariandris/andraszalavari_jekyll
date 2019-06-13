@@ -5,7 +5,7 @@ permalink: /cv/
 ---
 
 # CV
-# Studies 
+## Studies 
 
 * 2017-         DLA, Hungarian University of Fine Arts
 
@@ -17,13 +17,13 @@ permalink: /cv/
 
 * 1996-2004 Vörösmarty Mihály Highschool, mathematics, physics and art faculty
 
-# Exhibitions 
+## Exhibitions 
 
-## 2019
+### 2019
 
 * Analízis – kortárs fotóművészet a Hetényi–Gonda Gyűjteményből
 
-## 2018
+### 2018
 
 * Communitas, Labor, Budapest
 
@@ -33,7 +33,7 @@ permalink: /cv/
 
 * Studio 60, A Jövőt végkép eltörölni
 
-## 2017
+### 2017
 
 * Found Geometry, The Museum Vasarely of Fine Arts, Budapest
 
@@ -45,7 +45,7 @@ permalink: /cv/
 
 * Thinking some more, _Solo exhibition_, Óbudai Gallery, Budapest
 
-## 2016 
+### 2016 
 
 * I sleep to wake up, I get up to lie down, FKSE, Budapest 
 
@@ -53,7 +53,7 @@ permalink: /cv/
 
 * Listing IV. Kisterem Gallery, Budapest
 
-## 2015 
+### 2015 
 
 * INVERZ. Kisterem Gallery, Budapest
 
@@ -61,7 +61,7 @@ permalink: /cv/
 
 * Toi-Toi Projektraum, Of-Biennale, Brücke Zwei 
 
-## 2014 
+### 2014 
 
 * Projectzone, Vontobel Amadeus Art Grant, Artmarket, Budapest 
 
@@ -71,7 +71,7 @@ permalink: /cv/
 
 * Residency for Plants, SZAF, Glockengasse No 9 Art Gallery, Wien 
 
-## 2013
+### 2013
 
 * Artplacc, Tihany 
 
@@ -79,13 +79,13 @@ permalink: /cv/
 
 * Liget30, Olof Palme Ház, Budapest 
 
-## 2012 
+### 2012 
 
 * THE 01, The Video community - Main screening, Bunkier Sztuki Gallery of Contemporary Art, Kraków 
 
 * Csakoda, Mezőfalva 
 
-## 2011 
+### 2011 
 
 * Crossmedia, Labor, Budapest 
 
@@ -95,7 +95,7 @@ permalink: /cv/
 
 * Palazzo delle Esposizioni, BoH Art, Faenza 
 
-## 2010 
+### 2010 
 
 * LudwigInzert, Budapest 
 
