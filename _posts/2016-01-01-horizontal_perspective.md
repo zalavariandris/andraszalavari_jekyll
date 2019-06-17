@@ -7,6 +7,7 @@ gallery:
   layout: featured
   photos:
   - url: /assets/media/hosok_osz.jpg
+    alt: horizontally inverse perspective of Heroes square in Budapest
   - url: /assets/media/HIP-fatol_az_erdo.jpg
   - url: /assets/media/HIP-fountain_paris.jpg
   - url: /assets/media/HIP-balak.jpg

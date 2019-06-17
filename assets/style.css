@@ -1,3 +1,5 @@
+
+
 body{
     font-family: 'Futura', Arial, sans-serif;
     font-weight: normal;	
@@ -46,13 +48,19 @@ header nav a{
 }
 
 main{
-    max-width: 1280px;
+    max-width: 1000px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
 
-    padding: 0 5em;
+    padding: 0 50px;
+}
+
+@media (max-width: 768px){
+	main{
+		padding: 0 10px;
+	}
 }
 
 footer{
@@ -68,7 +76,7 @@ footer{
     list-style-type: none;
 }
 .post{
-	margin: 100px 50px;
+	margin: 100px 0;
     padding: 20px;
     background: white;
 }
