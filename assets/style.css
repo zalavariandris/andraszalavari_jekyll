@@ -17,6 +17,15 @@ body{
     word-wrap: break-word;
 }
 
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+  	border: 5px solid red;
+    background-color: olive;
+  }
+}
+
+
 a{
 	text-decoration: none;
 	color: inherit;

@@ -24,7 +24,7 @@ layout: default
     </tr>
   </thead> 
   {% for work in site.works %}
-    <tr class="work">
+    <tr>
       <td>{{work.title}}</td>
         <td>{{work.media}}</td>
         <td>{{work.copies}}</td>
@@ -48,7 +48,7 @@ layout: default
     </tr>
   </thead> 
   {% for item in site.posts %}
-    <tr class="work"> 
+    <tr> 
       <td>{{item.title}}</td>
       <td>{{item.type}}</td>
       <td>
@@ -58,6 +58,28 @@ layout: default
         {% endfor %}
         {% endif %}
       </td>
+    </tr>
+  {% endfor %}
+</table>
+
+<h2>All Exhibitions</h2>
+<table>
+  <thead>
+    <tr>
+      <td>year</td>
+      <td>title</td>
+      <td>gallery</td>
+      <td>city</td>
+      <td>solo</td>
+    </tr>
+  </thead> 
+  {% for item in site.data.exhibitions %}
+    <tr> 
+      <td>{{item.year}}</td>
+      <td>{{item.title}}</td>
+      <td>{{item.gallery}}</td>
+      <td>{{item.city}}</td>
+      <td>{{item.solo}}</td>
     </tr>
   {% endfor %}
 </table>
