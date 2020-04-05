@@ -10,3 +10,6 @@ https://jekyllrb.com/docs/installation/
 > bundle exec jekyll serve
 
 
+## deploy
+simply push to github
+> git push origin master

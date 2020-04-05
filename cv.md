@@ -4,26 +4,21 @@ title: CV
 permalink: /cv/
 ---
 
-# CV
-## Studies 
-
-* 2017-         DLA, Hungarian University of Fine Arts
-
-* 2006-2012 The Hungarian University of Fine Arts, painter department 
-
-* 2004-2006 MS Master drawing school 
-
-* 2004-2006 Decoration and Display School 
-
-* 1996-2004 Vörösmarty Mihály Highschool, mathematics, physics and art faculty
-
 ## Exhibitions 
 
+### 2020
+
+* Depth is another Width _Solo exhibition_, Kisterem, Budapest
+
 ### 2019
+
+* Kód és Algoritmus – Hommage á Vera Molnar, Vasarely Museum, Budapest
 
 * Analízis – kortárs fotóművészet a Hetényi–Gonda Gyűjteményből
 
 ### 2018
+
+* Optimista kiállítás. Erdély Miklós és az MKE (1946-2018)
 
 * Communitas, Labor, Budapest
 
@@ -63,7 +58,7 @@ permalink: /cv/
 
 ### 2014 
 
-* Projectzone, Vontobel Amadeus Art Grant, Artmarket, Budapest 
+* Project Zone, Vontobel Amadeus Art Grant, Artmarket, Budapest 
 
 * Souvenir workshop, POINT@NYITVA, PLACC fesztivál 
 
@@ -75,7 +70,7 @@ permalink: /cv/
 
 * Artplacc, Tihany 
 
-* Bunker Galéria 
+* miKÖZben, Bunker Galéria, Budapest
 
 * Liget30, Olof Palme Ház, Budapest 
 
@@ -104,3 +99,17 @@ permalink: /cv/
 * My Space My Country, Badischer Kunstverein, Karlsruhe 
 
 * Portfolio Points, Café Dongo, Budapest
+
+
+# CV
+## Studies 
+
+* 2017-         DLA, Hungarian University of Fine Arts
+
+* 2006-2012 The Hungarian University of Fine Arts, painter department 
+
+* 2004-2006 MS Master drawing school 
+
+* 2004-2006 Decoration and Display School 
+
+* 1996-2004 Vörösmarty Mihály Highschool, mathematics, physics and art faculty
