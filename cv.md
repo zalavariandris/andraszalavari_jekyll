@@ -4,6 +4,8 @@ title: CV
 permalink: /cv/
 ---
 
+# CV
+
 ## Exhibitions 
 
 ### 2020
@@ -101,7 +103,6 @@ permalink: /cv/
 * Portfolio Points, Café Dongo, Budapest
 
 
-# CV
 ## Studies 
 
 * 2017-         DLA, Hungarian University of Fine Arts
