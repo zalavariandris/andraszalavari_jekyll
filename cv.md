@@ -6,11 +6,22 @@ permalink: /cv/
 
 # CV
 
-## Exhibitions 
+## Solo Exhibitions 
 
 ### 2020
 
 * Depth is another Width, _Solo exhibition_, Kisterem, Budapest
+
+### 2017
+
+* Thinking some more, _Solo exhibition_, Óbudai Gallery, Budapest
+
+### 2014 
+
+* Are we satisfied that the earth is round?, _Solo exhibition_, Holdudvar, Budapest 
+
+
+## Selected Group Exhibitions 
 
 ### 2019
 
@@ -40,8 +51,6 @@ permalink: /cv/
 
 * Listing V. - Kisterem Gallery
 
-* Thinking some more, _Solo exhibition_, Óbudai Gallery, Budapest
-
 ### 2016 
 
 * I sleep to wake up, I get up to lie down, FKSE, Budapest 
@@ -63,8 +72,6 @@ permalink: /cv/
 * Project Zone, Vontobel Amadeus Art Grant, Artmarket, Budapest 
 
 * Souvenir workshop, POINT@NYITVA, PLACC fesztivál 
-
-* Are we satisfied that the earth is round?, _Solo exhibition_, Holdudvar, Budapest 
 
 * Residency for Plants, SZAF, Glockengasse No 9 Art Gallery, Wien 
 
