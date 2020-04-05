@@ -8,7 +8,7 @@ permalink: /cv/
 
 ### 2020
 
-* Depth is another Width _Solo exhibition_, Kisterem, Budapest
+* Depth is another Width, _Solo exhibition_, Kisterem, Budapest
 
 ### 2019
 
