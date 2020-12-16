@@ -4,37 +4,36 @@ title: Portfolio
 
 ---
 <ul class="posts">
-  {% for post in site.posts %}
-  <li class="post {{post.type}}">
-    <!-- {{post.title}} -->
-    
-    {% if post.type == 'photo' %}
-    <!-- IMAGE GALLERY POST -->
-    {% include gallery.html photos=post.gallery.photos layout=post.gallery.layout %}
-    {% endif %}
+    {% for post in site.posts %}
+    <li class="post {{post.type}}">
+        <!-- {{post.title}} -->
+        <figure>
+            {% if post.type == 'photo' %}
+            <!-- IMAGE GALLERY POST -->
+            {% include gallery.html photos=post.gallery.photos layout=post.gallery.layout %}
+            {% endif %}
 
-    
-    {% if post.type == 'video' %}
-    <!-- VIDEO POST -->
-    <video controls preload="none" poster={{site.baseurl}}{{post.video.snapshots[0].url}}>
-      <source src={{site.videourl}}{{post.video.url}} type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      {% endif %}
+            {% if post.type == 'video' %}
+            <!-- VIDEO POST -->
+            <video controls preload="none" poster={{site.baseurl}}{{post.video.snapshots[0].url}}>
+                <source src={{site.videourl}}{{post.video.url}} type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            {% endif %}
 
-      
-      {% if post.type == 'vimeo' %}
-      <!-- VIMEO POST -->
-      <iframe src={{post.vimeo.url}} width={{post.vimeo.width}} height={{post.vimeo.height}}  frameborder="0" loop="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      {% endif %}
+            {% if post.type == 'vimeo' %}
+            <!-- VIMEO POST -->
+            <iframe src={{post.vimeo.url}} width={{post.vimeo.width}} height={{post.vimeo.height}}  frameborder="0" loop="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            {% endif %}
 
-      <div class="caption">
-        <!-- <a href={{site.baseurl}}{{post.url}}> -->
-          <h2 class="title">{{post.title}}</h2>
-          {{post.excerpt}}
-        <!-- </a> -->
-      </div>
-
+            <!-- CAPTION -->
+            <figcaption>
+                <a href={{site.baseurl}}{{post.url}}>
+                    <h2 class="title">{{post.title}}</h2>
+                {{post.excerpt}}
+                </a>
+            </figcaption>
+        </figure>
     </li>
     {% endfor %}
-  </ul>
+</ul>

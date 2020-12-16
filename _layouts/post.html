@@ -2,5 +2,30 @@
 layout: default
 ---
 
+<figure>
+    <!-- IMAGE GALLERY POST -->
+    {% if page.type == 'photo' %}
+    {% include gallery.html photos=page.gallery.photos layout=page.gallery.layout %}
+    {% endif %}
 
-{{ content | remove: page.excerpt }}
+    <!-- VIDEO POST -->
+    {% if page.type == 'video' %}
+    <video controls preload="none" poster={{site.baseurl}}{{page.video.snapshots[0].url}}>
+        <source src={{site.videourl}}{{page.video.url}} type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    {% endif %}
+
+    <!-- VIMEO POST -->
+    {% if page.type == 'vimeo' %}
+    <iframe src={{page.vimeo.url}} width={{page.vimeo.width}} height={{page.vimeo.height}}  frameborder="0" loop="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    {% endif %}
+
+    <!-- CAPTION -->
+    <figcaption>
+        <a href={{site.baseurl}}{{page.url}}>
+            <h2 class="title">{{page.title}}</h2>
+        	{{page.excerpt}}
+        </a>
+    </figcaption>
+</figure>

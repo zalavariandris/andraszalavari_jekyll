@@ -81,24 +81,24 @@ footer{
     background: white;
 }
 
-.post .caption{
+.post figure figcaption{
 	text-align: right;
 }
 
-.post .caption a:hover{
+.post figure figcaption a:hover{
 	text-decoration: none;
 }
-.post .caption a:hover h2{
+.post figure figcaption a:hover h2{
 	text-decoration: underline;
 }
 
-.post .caption h2 {
+.post figure figcaption h2 {
 	font-size: 13px;
 	margin: 0.67em 0;
     font-weight: normal;
 }
 
-.post .caption p{
+.post figure figcaption p{
 	text-align: right;
 	font-style: italic;
 	font-size: 10px;
