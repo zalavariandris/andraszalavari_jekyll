@@ -7,7 +7,7 @@ https://jekyllrb.com/docs/installation/
 > jekyll -v
 
 ## Start local dev server
-> bundle exec jekyll serve
+> bundle exec jekyll serve --host 0.0.0.0 --livereload
 
 
 ## deploy

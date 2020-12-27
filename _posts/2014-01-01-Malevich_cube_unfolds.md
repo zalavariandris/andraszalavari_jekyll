@@ -1,6 +1,7 @@
 ---
-title: ""
-
+title: "unfold"
+caption: |
+  2015
 layout: post
 type: photo
 gallery:
@@ -9,8 +10,9 @@ gallery:
   - url: /assets/media/kiserlet_egy_kocka_eltuntetesere-cube_unfold.jpg
 ---
 
-210x197mm, c-print
+## {{page.title}}
 
-2015
-
-<!-- more -->
+![](/assets/media/kiserlet_egy_kocka_eltuntetesere-plane.jpg)
+![](/assets/media/kiserlet_egy_kocka_eltuntetesere-cube_unfold.jpg)
+_210x197mm, c-print  
+2015_

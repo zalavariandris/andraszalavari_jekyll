@@ -1,16 +1,45 @@
+:root{
+	--backgroundColor: rgb(240, 240, 240);
+	--onBackgroundColor: #3c3c3b;;
+	--onBackgroundVariantColor: grey;
 
+	--surfaceColor: white;
+	--onSurfaceColor: #3c3c3b;
+
+	--surfaceVariantColor: black;
+	--onSurfaceVariantColor: rgb(220, 220, 220);;
+}
 
 body{
     font-family: 'Futura', Arial, sans-serif;
     font-weight: normal;	
     margin: 0;
     padding: 0;
-    background: rgb(240, 240, 240);
+    background: var(--backgroundColor);
 
     font-size: 13px;
-    color: #3c3c3b;
+    color: var(--onSurfaceColor);
     line-height: normal;
     word-wrap: break-word;
+}
+
+article.post>figure{
+	margin: 5em 0;
+}
+article.post video{
+	width: 100%;
+}
+
+article.post>figure figcaption{
+	text-align: right;
+	margin: 1em;
+	font-style: italic;
+	font-size: smaller;
+}
+
+h1, h2{
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 a{
@@ -18,7 +47,7 @@ a{
 	color: inherit;
 }
 a:hover{
-	text-decoration: underline;
+	text-decoration: underline !important;
 }
 
 video{
@@ -63,10 +92,17 @@ main{
 	}
 }
 
+article img{
+	max-width: 100%;
+	max-height: 95vh;
+	/*display: block;*/
+}
+
 footer{
-	color: grey;
+	color: var(--onBackgroundVariantColor);
 	text-align: right;
 	margin: 1em;
+	margin-top: 15em;
 }
 
 .posts{
@@ -77,28 +113,32 @@ footer{
 }
 .post{
 	margin: 100px 0;
-    padding: 20px;
-    background: white;
+    padding: 20px 60px;
+    background: var(--surfaceColor);
 }
 
-.post figure figcaption{
+.post>figure{
+	margin: 0;
+}
+
+.post>figure figcaption{
 	text-align: right;
 }
 
-.post figure figcaption a:hover{
+.post>figure figcaption a:hover{
 	text-decoration: none;
 }
-.post figure figcaption a:hover h2{
+.post>figure figcaption a:hover h2{
 	text-decoration: underline;
 }
 
-.post figure figcaption h2 {
+.post>figure figcaption h2 {
 	font-size: 13px;
 	margin: 0.67em 0;
     font-weight: normal;
 }
 
-.post figure figcaption p{
+.post>figure figcaption p{
 	text-align: right;
 	font-style: italic;
 	font-size: 10px;
@@ -111,8 +151,8 @@ footer{
 
 .post.video, .post.vimeo{
 	text-align: center;
-	color: rgb(220, 220, 220);
-	background: black;
+	color: var(--onSurfaceVariantColor);
+	background: var(--surfaceVariantColor);
 	border-radius: 3px;
 }
 
@@ -123,38 +163,6 @@ footer{
 
 .post.video video:focus{
 	outline: none;
-}
-
-
-/*GALLERY*/
-
-.gallery{
-	display: flex;
-	flex-wrap: wrap;
-	margin: -5px;
-}
-
-.gallery .item{
-	height: auto;
-	flex-grow: 1;
-	flex-wrap: nowrap;
-	flex-basis: 0; /* max 4 items in a row */
-	margin: 5px;
-
-	/*outline: dashed black 1px;*/
-}
-
-.gallery.featured .item:first-child { 
-  flex-basis:100%; 
-}
-
-.gallery img{
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-/*	width:100px;
-	height: 100px;*/
 }
 
 /*CV*/
@@ -182,6 +190,93 @@ h3{
 	font-weight: normal;
 }
 
+/* COMPONENTS */
+/* Gallery */
+figure.gallery{
+	display: flex;
+ 	flex-wrap: wrap;
+ 	gap: 10px;
+}
+figure.gallery img{
+	display: block;
+	width: 100%;
+    height: 100%;
+	object-fit: cover;
+}
+
+figure.gallery>img,
+figure.gallery>video{
+  display: block;
+  height: auto;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 30%;
+  object-fit: cover;
+  width: 1px;
+}
+figure.gallery>video{
+	object-fit: contain;
+}
+
+/* the first element shoud take the firs row*/
+figure.gallery>img:first-of-type,
+figure.gallery>video:first-of-type, { 
+  flex-basis:100%; 
+}
+
+/* make sure the figcaption is under all other items*/
+figure.gallery>figcaption{
+	flex-basis: 100%;
+}
+
+/* if there is only two images, than put them is the first row equally*/
+figure.gallery>img:nth-of-type(1):nth-last-of-type(2),
+figure.gallery>img:nth-of-type(2):nth-last-of-type(1),
+figure.gallery>video:nth-of-type(1):nth-last-of-type(2),
+figure.gallery>video:nth-of-type(2):nth-last-of-type(1),
+{
+	flex-basis:0;
+}
+
+article.post h1, article.post>h2{
+	text-align: center;
+}
+
+/* Markdown specific */
+
+/* inline figure with caption */
+
+/*p{
+	text-indent: 1em;
+	margin: 0;
+}*/
+
+p>img, video{
+	display: block;
+	width: 100%;
+	max-height: 95vh;
+	object-fit: contain;
+	object-position: center;
+}
+p>img~em, video~p>em
+{
+	display: block;
+	font-variant: italic;
+	/*text-align: center;*/
+	margin: 1em;
+	font-size: smaller;
+}
+p>img~em:last-child{
+	margin-bottom: 5em;
+}
+
+hr{
+	width: 66%;
+	margin: 3em auto;
+    border: none;
+    border-bottom: thin lightgrey solid;
+}
+
 /*Overview*/
 table{
   border: 2px solid lightblue;
@@ -196,4 +291,8 @@ table{
 table td{
 	padding: 1em;
 	border: 1px solid lavender;
+}
+
+figure{
+	margin: 5em;
 }

@@ -7,31 +7,31 @@ title: Portfolio
     {% for post in site.posts %}
     <li class="post {{post.type}}">
         <!-- {{post.title}} -->
-        <figure>
+        <figure class="gallery">
             {% if post.type == 'photo' %}
-            <!-- IMAGE GALLERY POST -->
-            {% include gallery.html photos=post.gallery.photos layout=post.gallery.layout %}
+                <!-- IMAGE GALLERY POST -->
+                {% for photo in post.gallery.photos %}
+                    <img alt="{{photo.alt}}" src="{{site.baseurl}}{{photo.url}}">
+                {% endfor %}
             {% endif %}
 
             {% if post.type == 'video' %}
-            <!-- VIDEO POST -->
-            <video controls preload="none" poster={{site.baseurl}}{{post.video.snapshots[0].url}}>
-                <source src={{site.videourl}}{{post.video.url}} type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+                <!-- VIDEO POST -->
+                <video controls preload="none" poster={{site.baseurl}}{{post.video.snapshots[0].url}}>
+                    <source src={{site.videourl}}{{post.video.url}} type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             {% endif %}
 
             {% if post.type == 'vimeo' %}
-            <!-- VIMEO POST -->
-            <iframe src={{post.vimeo.url}} width={{post.vimeo.width}} height={{post.vimeo.height}}  frameborder="0" loop="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <!-- VIMEO POST -->
+                <iframe src={{post.vimeo.url}} width={{post.vimeo.width}} height={{post.vimeo.height}}  frameborder="0" loop="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
             {% endif %}
 
             <!-- CAPTION -->
             <figcaption>
-                <a href={{site.baseurl}}{{post.url}}>
-                    <h2 class="title">{{post.title}}</h2>
-                {{post.excerpt}}
-                </a>
+                <h2><a href={{site.baseurl}}{{post.url}}>{{post.title}}</a></h2>
+                {{post.caption | markdownify}}
             </figcaption>
         </figure>
     </li>
