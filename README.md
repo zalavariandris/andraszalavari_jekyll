@@ -1,4 +1,9 @@
-# Setup
+# András Zalavári Portfolio site
+
+A simple portfolio site built with jelyll.
+
+!(screenshot)[./docs/screenshot.png]
+
 ## Install jekyll
 https://jekyllrb.com/docs/installation/
 ```

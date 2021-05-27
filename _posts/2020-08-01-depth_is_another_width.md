@@ -9,14 +9,13 @@ gallery:
   - url: /assets/media/200130_MG_1732.jpg
   - url: /assets/media/balaton4.jpg
   - url: /assets/media/Duna-70x49.jpg
-  
-  
-typora-copy-images-to: ..\assets\media
-typora-root-url: ../
 
 title: Depth is Another Width
 caption: | 
   2020
+
+typora-copy-images-to: ../assets/media
+typora-root-url: ../
 ---
 
 ![](/assets/media/200130_MG_1696.jpg)
