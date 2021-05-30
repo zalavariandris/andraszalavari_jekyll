@@ -26,6 +26,7 @@ body{
 article.post>figure{
 	margin: 5em 0;
 }
+
 article.post video{
 	width: 100%;
 }
@@ -158,7 +159,7 @@ footer{
 
 .post.video video, .post.vimeo iframe{
 	margin-bottom: 1.5em;
-	max-height: 700px
+	max-height: 80vh;
 }
 
 .post.video video:focus{
@@ -195,6 +196,8 @@ h3{
 figure.gallery{
 	display: flex;
  	flex-wrap: wrap;
+ 	flex-direction: row;
+  flex-flow: wrap;
  	gap: 10px;
 }
 figure.gallery img{
@@ -207,36 +210,33 @@ figure.gallery img{
 figure.gallery>img,
 figure.gallery>video{
   display: block;
-  height: auto;
-  flex-shrink: 1;
+  /*width:  auto;*/
+  /*height: auto;*/
+/*  min-height: 30vh;
+  max-height: 80vh;*/
+  /*flex-shrink: 1;*/
   flex-grow: 1;
-  flex-basis: 30%;
+  flex-basis: 25%;
+  width:  25%;
   object-fit: cover;
-  width: 1px;
+  /*width: 1px;*/
+  margin:  2px;
 }
+
+figure>img:nth-of-type(1){
+	width:  100%;
+}
+
+figure>figcaption{
+	width: 100%;
+}
+
 figure.gallery>video{
 	object-fit: contain;
+	max-height: 90vh;
 }
 
-/* the first element shoud take the firs row*/
-figure.gallery img:first-child,
-figure.gallery video:first-child { 
-  flex-basis:100%; 
-}
 
-/* make sure the figcaption is under all other items*/
-figure.gallery>figcaption{
-	flex-basis: 100%;
-}
-
-/* if there is only two images, than put them is the first row equally*/
-figure.gallery>img:nth-of-type(1):nth-last-of-type(2),
-figure.gallery>img:nth-of-type(2):nth-last-of-type(1),
-figure.gallery>video:nth-of-type(1):nth-last-of-type(2),
-figure.gallery>video:nth-of-type(2):nth-last-of-type(1)
-{
-	flex-basis:0;
-}
 
 article.post h1, article.post>h2{
 	text-align: center;
